@@ -12163,11 +12163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SHAHED\\source\\repos\\KudHundred\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectUniqueName": "C:\\Users\\SHAHED\\Desktop\\KudvanKetAspNetCore124\\EmployeeManagement\\EmployeeManagement.csproj",
       "projectName": "EmployeeManagement",
-      "projectPath": "C:\\Users\\SHAHED\\source\\repos\\KudHundred\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectPath": "C:\\Users\\SHAHED\\Desktop\\KudvanKetAspNetCore124\\EmployeeManagement\\EmployeeManagement.csproj",
       "packagesPath": "C:\\Users\\SHAHED\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SHAHED\\source\\repos\\KudHundred\\EmployeeManagement\\obj\\",
+      "outputPath": "C:\\Users\\SHAHED\\Desktop\\KudvanKetAspNetCore124\\EmployeeManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
