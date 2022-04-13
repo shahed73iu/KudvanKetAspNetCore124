@@ -1,34 +1,25 @@
 ﻿@model IEnumerable<EmployeeManagement.Models.Employee>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <div class="container">
-        <table>
-            <thead>
+<div style="display:flex; justify-content:center; align-items:center; flex-direction:column; height:100vh; background:azure">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Department</th>
-                    <th>Email</th>
+                    <td>@employee.Id</td>
+                    <td>@employee.Name</td>
+                    <td>@employee.Department</td>
+                    <td>@employee.Email</td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var employee in Model)
-                {
-                    <tr>
-                        <td>@employee.Id</td>
-                        <td>@employee.Name</td>
-                        <td>@employee.Department</td>
-                        <td>@employee.Email</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-
-    </div>
-
-</body>
-</html>
+            }
+        </tbody>
+    </table>
+</div>
