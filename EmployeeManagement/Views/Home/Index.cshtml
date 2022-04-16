@@ -1,5 +1,10 @@
 ﻿@model IEnumerable<EmployeeManagement.Models.Employee>
 
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee List";
+}
+
 <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; height:100vh; background:azure">
     <table>
         <thead>

@@ -1,5 +1,10 @@
 ﻿@model EmployeeManagement.ViewModels.HomeDetailsViewModel
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee Details";
+}
+
 <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; height:100vh; background:azure">
     <h3>@Model.PageTitle</h3>
 
@@ -15,4 +20,7 @@
     <div>
         Department : @Model.Employee.Department
     </div>
-</divstyle="display:flex;>
+</div>
+@section Scripts {
+    <script src="~/js/CustomScripts.js"></script>
+}
