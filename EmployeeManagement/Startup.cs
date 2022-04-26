@@ -32,7 +32,8 @@ namespace EmployeeManagement
             }
 
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(route => route.MapRoute("default","{controller=Home}/{action=Index}/{id?}"));
 
             app.Run(async (context) =>
             {

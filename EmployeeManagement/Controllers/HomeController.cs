@@ -25,12 +25,12 @@ namespace EmployeeManagement.Controllers
         [Route("~/")]
         [Route("/Home")]
         [Route("~/Home/Details")]
-        public ViewResult Details()
+        public ViewResult Details(int id)
         {
-            Employee model = _employeeRepository.GetEmployee(1);
+            Employee model = _employeeRepository.GetEmployee(id);
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(1),
+                Employee = _employeeRepository.GetEmployee(id),
                 PageTitle = "Employee Details"
             } ;
             return View(homeDetailsViewModel);
