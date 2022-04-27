@@ -30,7 +30,7 @@ namespace EmployeeManagement.Controllers
             Employee model = _employeeRepository.GetEmployee(id);
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(id),
+                Employee = _employeeRepository.GetEmployee(1),
                 PageTitle = "Employee Details"
             } ;
             return View(homeDetailsViewModel);
