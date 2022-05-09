@@ -16,15 +16,16 @@ namespace EmployeeManagement.Controllers
         {
             _employeeRepository = employeeRepository;
         }
+
+        [Route("~/")]
+        [Route("/Home")]
+        [Route("~/Home/Index")]
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployee();
             return View(model);
         }
 
-        [Route("~/")]
-        [Route("/Home")]
-        [Route("~/Home/Details")]
         public ViewResult Details(int id)
         {
             Employee model = _employeeRepository.GetEmployee(id);
